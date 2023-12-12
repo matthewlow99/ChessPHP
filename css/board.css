@@ -1,0 +1,73 @@
+.board{
+    display:grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+    gap: 0px;
+    outline: 30px solid rgb(95, 54, 0);
+    border: 5px solid black;
+    width: fit-content;
+    margin: auto;
+}
+#currentTurn{
+    background-color: white;
+    padding-left: 10px;
+    padding-right:10px;
+}
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.odd{
+    background-color: white;
+}
+.even{
+    background-color: rgb(0, 128, 111);
+}
+.boardContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    margin: auto;
+    
+}
+
+.sprite::before{
+    width: 70%;
+    height: 70%;
+}
+.noClick{
+    pointer-events: none;
+    /* border: 2px solid rgb(0, 253, 0); */
+}
+.spriteHover{
+    border: 2px solid gold;
+}
+.select{
+    background-color: rgba(0, 4, 255, 0.301);
+}
+.valid{
+    /* background-color: rgba(137, 43, 226, 0); */
+    border: 2px solid rgb(245, 0, 253);
+}
+
+#container{
+    display: flex;
+    height: 100%;
+    margin: auto;
+    
+}
+.validCastle{
+    border: 2px solid rgb(0, 160, 253);
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: grey;
+    
+}
